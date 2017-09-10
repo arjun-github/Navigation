@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/radialgradientback"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_google_signin_btn_text_dark_disabled"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Select Color"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:background="@color/common_google_signin_btn_text_dark_disabled"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <RadioButton
+            android:id="@+id/RED"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark"
+            android:text="Red"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="@android:color/holo_blue_dark" />
+
+        <RadioButton
+            android:id="@+id/GREEN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:text="Green"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/BLUE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Blue"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/GREY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:text="Grey"
+            android:textColor="@android:color/background_light" />
+
+    </RadioGroup>
+
+</RelativeLayout>
